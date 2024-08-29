@@ -1,0 +1,157 @@
+/* Preventing copying */
+* { user-select: none; }
+*::selection { background: none; }
+*::-moz-selection { background: none; }
+
+#clock {
+  padding: 0.1em;
+  max-width: 200px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.logo {
+  height: 5rem;
+}
+.banner {
+  height: 90vh;
+}
+.body {
+  margin: 0;
+}
+.box {
+  padding: 20px;
+  position: absolute;
+  margin-left: 15%;
+  z-index: 1;
+  margin-top: 10%;
+  background-color: #fff;
+}
+img.mg-4 {
+  bottom: 0;
+  position: fixed;
+}
+img.mg-5 {
+  float: left;
+}
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+p.text {
+  font-size: xxx-large;
+  font-family: Montserrat, sans-serif;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+
+.btn {
+  border-radius: 100px;
+  font-weight: 500;
+  width: 150px;
+}
+
+.main {
+  background-image: url("./images/Mask Group 6@2x.png");
+  background-size: 100% auto;
+  height: 100vh;
+  width: 100%;
+  background-position: 50%;
+  font-family: cursive;
+}
+
+.logo {
+  height: 5rem;
+  float: right;
+}
+
+.card {
+  width: 70%;
+  border-radius: 30px;
+  /* box-shadow: 0 4px 8px 0 #fff, 0 6px 20px 0 #000; */
+  box-shadow: rgb(100 100 111 / 37%) 0px 7px 29px 0px;
+  color: #211c98;
+  text-align: center;
+  padding: 0;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.student {
+  background-image: url("./images/Mask Group 1@2x.png");
+  background-size: 100% auto;
+  height: 100vh;
+  width: 100%;
+  background-position: 50%;
+  font-family: cursive;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.feedback {
+  background-image: url("./images/background.svg");
+  background-size: 100% auto;
+  height: 100vh;
+  width: 100%;
+  background-position: 50%;
+  font-family: cursive;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.component {
+  background-color: white;
+  border-radius: 30px;
+  /* box-shadow: 0 4px 8px 0 #fff, 0 6px 20px 0 #000; */
+  box-shadow: rgb(100 100 111 / 37%) 0px 7px 29px 0px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
