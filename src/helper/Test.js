@@ -21,7 +21,7 @@ import { isAuthenticated } from "./Auth";
 
 export const getQuestions = (lang) => {
   const token = isAuthenticated();
-  let apiURL = `https://reload-24-backend.onrender.com/student/get-questions`;
+  let apiURL = `https://reload-24-backend-new.onrender.com/student/get-questions`;
 
   // Check if "domain1" is available in localStorage
   const domain1 = localStorage.getItem('domain1');
@@ -54,7 +54,7 @@ export const getQuestions = (lang) => {
 
 export const submitAnswer = (res) => {
   const token = isAuthenticated();
-  return fetch(`https://reload-24-backend.onrender.com/student/submit-responses`, {
+  return fetch(`https://reload-24-backend-new.onrender.com/student/submit-responses`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -74,7 +74,7 @@ export const submitAnswer = (res) => {
 
 export const submitFeedback = (res) => {
   const token = isAuthenticated(); 
-  return fetch(`https://reload-24-backend.onrender.com/student/submit-feedback`, {
+  return fetch(`https://reload-24-backend-new.onrender.com/student/submit-feedback`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -94,7 +94,7 @@ export const submitFeedback = (res) => {
 
 export const endTest = (res) => {
   const token = isAuthenticated();
-  return fetch(`https://reload-24-backend.onrender.com/student/end-test`, {
+  return fetch(`https://reload-24-backend-new.onrender.com/student/end-test`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -114,7 +114,7 @@ export const endTest = (res) => {
 
 export const cheatingCounter = () => {
   const token = isAuthenticated();
-  return fetch(`https://reload-24-backend.onrender.com/student/unfairAttempt`, {
+  return fetch(`https://reload-24-backend-new.onrender.com/student/unfairAttempt`, {
     method: "PATCH",
     headers: {
       Accept: "application/json",

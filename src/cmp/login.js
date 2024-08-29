@@ -150,7 +150,7 @@ const Signin = () => {
                     </div>
                   </div>
                   <ReCAPTCHA 
-                    sitekey="6LfijhUoAAAAALKKm59EaNOAkVkCOveEdNKlK7rq"
+                    sitekey="6LeiIzIqAAAAANU8ELR1lMwSHhQlUr2m2XUhGxPP"
                     ref={captchaRef} 
                   />
                   <div className="d-flex" style={{ marginTop: '0.6rem' }}>
