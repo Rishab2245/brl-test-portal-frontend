@@ -92,7 +92,7 @@ export default class feedback extends Component {
               didRedirect: true,
             };
           });
-          window.open("https://www.hackerrank.com/reload-2112023");
+          window.open("https://www.hackerrank.com/relaod-3-0");
         })
         .catch((error) => {
           return error;
