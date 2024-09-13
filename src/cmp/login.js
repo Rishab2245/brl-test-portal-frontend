@@ -36,9 +36,8 @@ const Signin = () => {
   const onSubmit = (event) => {
     event.preventDefault();
     const token = captchaRef.current.getValue();
-
     if(token) {
-    // console.log("REcaptcha TOken: ", token);
+    console.log("REcaptcha TOken: ", token);
     localStorage.setItem('kaerbanoerrewewe', token)
     captchaRef.current.reset();
 
@@ -150,7 +149,7 @@ const Signin = () => {
                     </div>
                   </div>
                   <ReCAPTCHA 
-                    sitekey="6LeiIzIqAAAAANU8ELR1lMwSHhQlUr2m2XUhGxPP"
+                    sitekey="6LcmgD8qAAAAAKDYa7mWsArFJQTpT6XG81mQ4fbQ"
                     ref={captchaRef} 
                   />
                   <div className="d-flex" style={{ marginTop: '0.6rem' }}>
