@@ -88,7 +88,7 @@ const Questions = () => {
           if (data.err) {
             setValues({ ...values, error: data.err });
             handleShow();
-          } else if (data.message) { // change data.message -> data.msg
+          } else if (data.msg) { // change data.message -> data.msg
             setValues({ ...values, error: data.msg});
             window.location.href = "./student/feedback";
           } else if (data.error) {
