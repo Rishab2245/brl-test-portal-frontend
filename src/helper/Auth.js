@@ -1,5 +1,5 @@
 export const signup = (user) => {
-  return fetch(`https://reload-24-backend-new.onrender.com/register`, {
+  return fetch(`https://reload24.mohitbharti.live/register`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -40,7 +40,7 @@ export const signin = (user) => {
     recaptcha: recaptchaToken,
   };
 
-  return fetch(`https://reload-24-backend-new.onrender.com/login`, {
+  return fetch(`https://reload24.mohitbharti.live/login`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -69,7 +69,7 @@ export const signout = (next) => {
     localStorage.removeItem("token");
     next();
 
-    return fetch(`https://reload-24-backend-new.onrender.com/logout`, {
+    return fetch(`https://reload24.mohitbharti.live/logout`, {
       method: "GET",
     })
       .then((response) => console.log("logout success"))
