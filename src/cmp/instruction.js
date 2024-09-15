@@ -98,7 +98,7 @@ const Instruction = () => {
       return <Redirect to="/student/questions" />;
     }
     if (!isAuthenticated() || error === "Token is not valid") {
-      console.log("Instruction Token" + isAuthenticated());
+      // console.log("Instruction Token" + isAuthenticated());
       localStorage.removeItem("token");
       return <Redirect to="/" />;
     }

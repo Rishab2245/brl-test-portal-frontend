@@ -100,7 +100,7 @@ const Nav = () => {
       return <Redirect to="/student/questions" />;
     }
     if (!isAuthenticated()) {
-      console.log("Nav Token" + isAuthenticated());
+      // console.log("Nav Token" + isAuthenticated());
       return <Redirect to="/" />;
     }
   };

@@ -84,7 +84,7 @@ const Questions = () => {
       );
       endTest({ responses: filteredResponse })
         .then((data) => {
-          console.log(data);
+          // console.log(data);
           if (data.err) {
             setValues({ ...values, error: data.err });
             handleShow();
@@ -119,7 +119,7 @@ const Questions = () => {
       if (seconds === 0) {
         if (minutes === 0) {
           if (hours === 0) {
-            console.log("times up",values);
+            // console.log("times up",values);
             setValues({ ...values, error: "Test Has Ended" });
             window.location.href = "./student/feedback";
           } else {
@@ -195,8 +195,8 @@ const Questions = () => {
               save: arr,
             });
             var button = document.getElementById("next");
-            console.log(button.value);
-            console.log(index);
+            // console.log(button.value);
+            // console.log(index);
             button.click();
           }
         })

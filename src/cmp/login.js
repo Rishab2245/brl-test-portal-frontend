@@ -37,7 +37,7 @@ const Signin = () => {
     event.preventDefault();
     const token = captchaRef.current.getValue();
     if(token) {
-    console.log("REcaptcha TOken: ", token);
+    // console.log("REcaptcha TOken: ", token);
     localStorage.setItem('kaerbanoerrewewe', token)
     captchaRef.current.reset();
 

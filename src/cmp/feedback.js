@@ -85,7 +85,7 @@ export default class feedback extends Component {
         feedback: this.state.feedback,
       })
         .then((data) => {
-          console.log("Success");
+          // console.log("Success");
           states.setState((values) => {
             return {
               ...values,
