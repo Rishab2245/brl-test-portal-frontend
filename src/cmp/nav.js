@@ -73,7 +73,7 @@ const Nav = () => {
     return (
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
-          <Modal.Title>RELOAD'22</Modal.Title>
+          <Modal.Title>RELOAD'24</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           Are You Sure? Once Submitted You Can Not Attempt Again.
